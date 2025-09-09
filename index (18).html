@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoidWalls</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffefba, #ffffff);
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Header / Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.5em;
+            max-width: 700px;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 35px;
+            border-radius: 50px;
+            background: #fff;
+            color: #fda085;
+            font-weight: 700;
+            transition: 0.4s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            background: #f39c12;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.8em;
+            color: #f39c12;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #f39c12;
+            margin: 10px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        section p {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .links a {
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            padding: 15px 30px;
+            border-radius: 50px;
+            color: #fff;
+            font-weight: 600;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: 0.4s;
+        }
+
+        .links a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Cards for “Other Channels” */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px 30px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            margin-bottom: 20px;
+            color: #f39c12;
+            font-size: 1.8em;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 25px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            color: #fff;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .card a:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            color: #fff;
+            font-weight: 600;
+            margin-top: 50px;
+        }
+
+        @media(max-width:768px){
+            header h1 { font-size: 3em; }
+            header p { font-size: 1.2em; }
+            section h2 { font-size: 2em; }
+        }
+
+        @media(max-width:480px){
+            .card { width: 90%; padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>VoidWalls</h1>
+        <p>Your ultimate destination for stunning profile pictures (pfps) and wallpapers! Elevate your social profile with vibrant visuals.</p>
+        <a href="https://www.instagram.com/voidwalls?igsh=cHA3cWh5ZG8zMTJv" target="_blank" class="btn">Follow on Instagram</a>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <h2>About VoidWalls</h2>
+        <p>VoidWalls is a creative hub where you can find exclusive and aesthetic profile pictures (pfps) and wallpapers. Our collection is perfect for personalizing your devices and social media accounts with high-quality visuals.</p>
+    </section>
+
+    <!-- Other Channels Section -->
+    <section>
+        <h2>Check Out My Other Channels</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>YouTube Channel</h3>
+                <p>Subscribe to my main YouTube channel for more creative content, memes, and visuals.</p>
+                <a href="https://www.youtube.com/@kirmadakind" target="_blank">Visit YouTube</a>
+            </div>
+            <div class="card">
+                <h3>Instagram</h3>
+                <p>Follow me on Instagram for memes, exclusive posts, and creative updates.</p>
+                <a href="https://www.instagram.com/kirmadakind?igsh=dWdhMWZ5NHZ5N2dj" target="_blank">Visit Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 VoidWalls. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
